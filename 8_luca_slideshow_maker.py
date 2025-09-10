@@ -18,6 +18,7 @@ sel_scenario = scenarios[0]
 sel_model = models[0]
 sel_epsilon = epsilons[0]
 sel_year = years[0]
+fps = 1.5
 
 image_paths = []
 for sel_epsilon in epsilons:
@@ -38,7 +39,7 @@ for sel_epsilon in epsilons:
 
                 # Define video writer
                 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # or 'XVID'
-                video = cv2.VideoWriter(f'/home/luca3/Desktop/PoD/stage/{sel_disease}_{sel_scenario}_{sel_model}_{sel_epsilon}_epsilon_italy_slideshow_yearly.mp4', fourcc, 1.5, (width, height))  
+                video = cv2.VideoWriter(f'/home/luca3/Desktop/PoD/stage/{sel_disease}_{sel_scenario}_{sel_model}_{sel_epsilon}_epsilon_italy_slideshow_yearly.mp4', fourcc, fps, (width, height))  
 
                 # Add frames
                 for img_file in img_files:
