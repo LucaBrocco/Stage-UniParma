@@ -28,7 +28,7 @@ Tmob = [30.0, 60.0, 90.0, 120.0, 150.0]
 Tepi = [12.0, 16.0, 20.0, 24.0]
 
 # epsilons is all possible combinations of Tmob / Tepi rounded to 4 decimal 
-epsilons = [round(i/j,4) for i in Tmob for j in Tepi]
+epsilons = [round(i/j,4) for i in Tepi for j in Tmob]
 
 # Loop over combinations
 
